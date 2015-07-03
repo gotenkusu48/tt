@@ -26,6 +26,12 @@ namespace MasterDetailApp
 		
 		public static void UpdateIdValues()
 		{
+			global::GalaSoft.MvvmLight.Resource.String.ApplicationName = global::MasterDetailApp.Resource.String.ApplicationName;
+			global::GalaSoft.MvvmLight.Resource.String.Hello = global::MasterDetailApp.Resource.String.Hello;
+			global::ReactiveProperty.XamarinAndroid.Resource.String.ApplicationName = global::MasterDetailApp.Resource.String.ApplicationName;
+			global::ReactiveProperty.XamarinAndroid.Resource.String.Hello = global::MasterDetailApp.Resource.String.Hello;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::MasterDetailApp.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::MasterDetailApp.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
