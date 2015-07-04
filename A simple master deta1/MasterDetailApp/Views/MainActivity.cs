@@ -22,7 +22,7 @@ namespace MasterDetailApp.Views
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
+            
             this.viewModel = new MainActivityViewModel(this, AppContext.Instance);
             var header = new Button(this)
             {
@@ -38,6 +38,7 @@ namespace MasterDetailApp.Views
 
             this.ListView.ScrollAsObservable()
                 .Where(x => x.TotalItemCount == x.FirstVisibleItem + x.VisibleItemCount)
+                
                 .SetCommand(this.viewModel.LoadMoreCommand);
 
             this.ListView.ItemClickAsObservable()
